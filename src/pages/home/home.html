@@ -1,17 +1,70 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Misiones</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-img width="60" height="60" src="assets/imgs/mundo_magico.jpg"></ion-img>
+            Mundo Mágico
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            Mundo cuatro
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            Mundo dos
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            Mundo cinco
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            Mundo tres
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+          <ion-card-header>
+            Mundo seis
+          </ion-card-header>
+          <ion-card-content>
+            <button ion-button>Iniciar Misión</button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
