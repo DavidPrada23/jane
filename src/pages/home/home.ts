@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, MenuController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { AboutPage } from '../about/about';
+
 
 @Component({
   selector: 'page-home',
@@ -7,8 +9,9 @@ import { NavController, MenuController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public menu: MenuController) {
-    menu.enable(true);
+  constructor(public navCtrl: NavController ) { }
+  goToAboutPage(){
+    this.navCtrl.push(AboutPage);
   }
 
 }

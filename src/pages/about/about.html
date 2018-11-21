@@ -1,37 +1,56 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Mission
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-card>
-    <ion-card-header>
-      <ion-img width="280" height="280" src="assets/imgs/laberinto.jpg"></ion-img>
-    </ion-card-header>
+    <img src="assets/imgs/laberinto.png">
   </ion-card>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-card>
-            <ion-card-content>
-              <button ion-button>
-                Avanzar
-              </button>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col>
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Arma tus pasos para resolver la misión</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+
+  <ion-card>
+    <ion-card-content>
+      <button ion-button small (click)="moveEvent()">
+        Move
+      </button>
+      <button ion-button small (click)="turnLeftEvent()">
+        Turn Left
+      </button>
+      <button ion-button small (click)="ifThenEvent()">
+        If/Then
+      </button>
+      <button ion-button small (click)="grabEvent()">
+        Grab
+      </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-item>
+        <h2>Selected step</h2>
+      </ion-item>
+    </ion-list>
+    <ion-item>
+      <p>Move</p>
+      <ion-badge item-end>{{ move }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <p>Turn Left</p>
+      <ion-badge item-end>{{ turnLeft }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <p>If/Then</p>
+      <ion-badge item-end>{{ ifThen }}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <p>Grab</p>
+      <ion-badge item-end>{{ grab }}</ion-badge>
+    </ion-item>
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
